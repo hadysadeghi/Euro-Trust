@@ -1,232 +1,211 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EuroTrust | به زودی فعال می‌شود</title>
-  <meta name="description" content="EuroTrust؛ بستری نوآورانه برای خرید و فروش آنلاین انتقال تکنولوژی و اجرای پروژه‌های فناورانه و تجارت بین‌المللی.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EuroTrust | به زودی فعال می‌شود</title>
+    <meta name="description" content="EuroTrust؛ بستری نوآورانه برای خرید و فروش آنلاین، انتقال تکنولوژی و اجرای پروژه‌های فناورانه و تجارت بین‌المللی.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="EuroTrust | به زودی فعال می‌شود" />
+    <meta property="og:description" content="پلتفرمی نوین برای تجارت بین‌المللی و هوش مصنوعی. به‌زودی فعال می‌شود." />
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
+    <!-- فونت فارسی Vazir -->
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="EuroTrust | به زودی فعال می‌شود">
-  <meta property="og:description" content="پلتفرمی نوین برای تجارت بین‌المللی و هوش مصنوعی. به‌زودی فعال می‌شود.">
-  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
-  <meta property="og:url" content="https://yourdomain.com">
-  <meta name="twitter:card" content="summary_large_image">
+    <style>
+        :root {
+            --primary: #1b6ec2;
+            --accent: #ffbf00;
+            --dark: #0e2238;
+            --bg: #f9f9f9;
+        }
 
-  <!-- Persian Font Vazir -->
-  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+        body {
+            font-family: 'Vazir', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+                        url('background.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            direction: rtl;
+            overflow-x: hidden;
+            text-align: center;
+        }
 
-  <style>
-    :root {
-      --primary: #1b6ec2;
-      --accent: #ffbf00;
-      --background: #f9f9f9;
-      --dark: #0e2238;
-    }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
+            max-width: 700px;
+            width: 90%;
+            z-index: 2;
+        }
 
-    body {
-      font-family: 'Vazir', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('Background.jpg') center/cover no-repeat;
-      color: var(--dark);
-      text-align: center;
-      direction: rtl;
-      position: relative;
-      overflow: hidden;
-    }
+        .logo img {
+            max-width: 140px;
+            margin-bottom: 20px;
+        }
 
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin: 0 auto;
-      animation: fadeIn 1s ease-in;
-      position: relative;
-      z-index: 2;
-    }
+        h1 {
+            font-size: 2.5em;
+            color: var(--primary);
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid var(--accent);
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
 
-    .logo svg {
-      max-width: 150px;
-      margin-bottom: 20px;
-    }
+        @keyframes blink {
+            50% { border-color: transparent }
+        }
 
-    h1.typewriter {
-      overflow: hidden;
-      border-right: .15em solid orange;
-      white-space: nowrap;
-      margin: 0 auto 20px;
-      letter-spacing: .1em;
-      animation: typing 3s steps(30, end), blink .75s step-end infinite;
-      font-size: 2em;
-      color: var(--primary);
-    }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: var(--dark);
+            animation: pulse 2s infinite;
+        }
 
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1 }
+            50% { transform: scale(1.03); opacity: 0.8 }
+            100% { transform: scale(1); opacity: 1 }
+        }
 
-    @keyframes blink {
-      50% { border-color: transparent }
-    }
+        p {
+            font-size: 1.1em;
+            margin-top: 15px;
+            color: #333;
+            line-height: 1.8;
+        }
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin-bottom: 30px;
-      animation: pulse 4s infinite;
-    }
+        .subscribe-form input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-align: right;
+        }
 
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.01); opacity: 0.9; }
-      100% { transform: scale(1); opacity: 1; }
-    }
+        .subscribe-form button {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
 
-    .subscribe-form input[type="email"] {
-      width: calc(100% - 22px);
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      font-size: 1em;
-      text-align: right;
-    }
+        .subscribe-form button:hover {
+            background-color: #145aa1;
+        }
 
-    .subscribe-form button {
-      background-color: var(--primary);
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1.1em;
-      transition: background-color 0.3s ease;
-    }
+        .social-links {
+            margin-top: 30px;
+        }
 
-    .subscribe-form button:hover {
-      background-color: #145aa1;
-    }
+        .social-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 1.4em;
+            margin: 0 10px;
+        }
 
-    .social-links {
-      margin-top: 30px;
-    }
+        #timer {
+            font-size: 1.3em;
+            color: #d9534f;
+            margin-top: 15px;
+        }
 
-    .social-links a {
-      color: var(--accent);
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 1.5em;
-    }
+        /* موج پایین صفحه */
+        .wave {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 120px;
+            z-index: 1;
+        }
 
-    #timer {
-      font-size: 1.5em;
-      margin-top: 20px;
-      color: #d9534f;
-    }
-
-    .wave {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      z-index: 1;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2em;
-      }
-      p {
-        font-size: 1em;
-      }
-    }
-  </style>
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            p { font-size: 1em; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <!-- لوگوی SVG متحرک -->
-      <svg viewBox="0 0 200 200" width="150" xmlns="http://www.w3.org/2000/svg">
-        <path d="M100,10 A90,90 0 0,1 190,100" fill="white">
-          <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="10s" repeatCount="indefinite" />
-        </path>
-        <path d="M190,100 A90,90 0 0,1 100,190" fill="#38a169">
-          <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="-360 100 100" dur="12s" repeatCount="indefinite" />
-        </path>
-        <path d="M100,190 A90,90 0 0,1 10,100" fill="#276749">
-          <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="14s" repeatCount="indefinite" />
-        </path>
-        <text x="100" y="135" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="white">
-          EURO TRUST
-          <animate attributeName="opacity" values="0;1;0.3;1" dur="5s" repeatCount="indefinite" />
-        </text>
-        <text x="100" y="155" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#38a169">
-          EUROPE TRUST
-          <animate attributeName="opacity" values="0;1;0.3;1" dur="7s" repeatCount="indefinite" />
-        </text>
-      </svg>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="لوگوی EuroTrust" />
+        </div>
+        <h1>EuroTrust: به‌زودی، دنیایی از امکانات!</h1>
+        <p>ما در حال ساخت پلتفرمی پیشرفته برای تجارت بین‌المللی، خرید و فروش آنلاین، انتقال تکنولوژی و اجرای پروژه‌های فناورانه با تمرکز بر هوش مصنوعی و ارتباط با اوراسیا، اروپا، چین و ترکیه هستیم.</p>
+        
+        <div id="timer"></div>
+
+        <div class="subscribe-form">
+            <h2>اولین نفری باشید که باخبر می‌شوید!</h2>
+            <form action="https://formsubmit.co/hadysadeghi@gmail.com" method="POST">
+                <input type="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://hadysadeghi.github.io/Euro-Trust">
+                <button type="submit">ارسال ایمیل</button>
+            </form>
+        </div>
+
+        <div class="social-links">
+            <p>ما را در شبکه‌های اجتماعی دنبال کنید:</p>
+            <a href="https://twitter.com/eurotrast" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/company/eurotrast" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/eurotrast" target="_blank">Instagram</a>
+        </div>
     </div>
 
-    <h1 class="typewriter">EuroTrust: به زودی، دنیایی از امکانات!</h1>
-    <p>ما در حال ساخت پلتفرمی پیشرفته برای تجارت بین‌المللی، خرید و فروش آنلاین، انتقال تکنولوژی و اجرای پروژه‌های فناورانه با تمرکز بر هوش مصنوعی و ارتباط با اوراسیا، اروپا، چین و ترکیه هستیم.</p>
+    <!-- موج SVG -->
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+        <path fill="#1b6ec2" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,90.7C480,107,600,149,720,160C840,171,960,149,1080,138.7C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
 
-    <div id="timer"></div>
+    <!-- تایمر جاوااسکریپت -->
+    <script>
+        var launchDate = new Date("Oct 1, 2025 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = launchDate - now;
 
-    <div class="subscribe-form">
-      <h2>اولین نفری باشید که باخبر می‌شوید!</h2>
-      <form action="https://formsubmit.co/hadysadeghi@gmail.com" method="POST">
-        <input type="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://hadysadeghi.github.io/Euro-Trust">
-        <button type="submit">ارسال ایمیل</button>
-      </form>
-    </div>
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    <div class="social-links">
-      <p>ما را در شبکه‌های اجتماعی دنبال کنید:</p>
-      <a href="https://twitter.com/eurotrast" target="_blank">Twitter</a>
-      <a href="https://linkedin.com/company/eurotrast" target="_blank">LinkedIn</a>
-      <a href="https://instagram.com/eurotrast" target="_blank">Instagram</a>
-    </div>
-  </div>
+            document.getElementById("timer").innerHTML = days + " روز " + hours + " ساعت " + minutes + " دقیقه " + seconds + " ثانیه ";
 
-  <!-- موج SVG در پایین صفحه -->
-  <svg class="wave" viewBox="0 0 1440 320">
-    <path fill="#1b6ec2" fill-opacity="0.3" d="M0,224L48,192C96,160,192,96,288,101.3C384,107,480,181,576,208C672,235,768,213,864,197.3C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-  </svg>
-
-  <script>
-    var launchDate = new Date("Oct 1, 2025 00:00:00").getTime();
-    var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = launchDate - now;
-
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("timer").innerHTML = days + " روز " + hours + " ساعت " + minutes + " دقیقه " + seconds + " ثانیه ";
-
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "ما راه‌اندازی شدیم!";
-      }
-    }, 1000);
-  </script>
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "ما راه‌اندازی شدیم!";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
